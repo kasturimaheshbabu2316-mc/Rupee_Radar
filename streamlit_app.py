@@ -4,12 +4,9 @@ import streamlit as st
 import pandas as pd
 from typing import Dict, Any
 
-# Ensure backend modules can be imported
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-from services.parser import parse_and_clean_csv, parse_and_clean_pdf
-from services.ai_engine import categorize_transactions, generate_insights
-from services.metrics import calculate_metrics
+from backend.services.parser import parse_and_clean_csv, parse_and_clean_pdf
+from backend.services.ai_engine import categorize_transactions, generate_insights
+from backend.services.metrics import calculate_metrics
 
 st.set_page_config(page_title="RupeeRadar Dashboard", page_icon="💸", layout="wide")
 
