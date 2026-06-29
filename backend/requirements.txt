@@ -6,3 +6,4 @@ groq
 pydantic
 pdfplumber
 python-dotenv
+streamlit
